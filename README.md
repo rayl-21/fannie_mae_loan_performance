@@ -12,6 +12,8 @@ High-level walkthrough of the ingestion logic:
 - Uncompress and ingest data files saved in csv format one at a time, since sizes of csv files vary from 1GB to >25GB and uncompressing all files at once might eat up the whole disk space.
 - Delete the data file.
 
+The ingestion time takes ~7.2 hours to complete.
+
 NOTE: This is a stand-alone exercise and the result will not be used in downstream tasks since it is beyond a laptop's capability to process the data even in the database environment. For context, a sinlge `COUNT(*)` command takes forever to run (recall that this is a table with oevr 2 billion rows).
 
 ## Data wrangling
