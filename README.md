@@ -7,7 +7,7 @@ The dataset itself does not contain any column information, but this [R script](
 
 ## ETL exercise
 High-level walkthrough of the ingestion logic:
-- Set up a local PostgreSQL database to store the dataset. Using default configurations of PostgreSQL is enough for this exercise.
+- Set up a local PostgreSQL database to store the dataset. Using default configurations of PostgreSQL is enough for this exercise. PostgreSQL can be [downloaded here](https://www.postgresql.org/download/).
 - Create a table in the database.
 - Uncompress and ingest data files saved in csv format one at a time, since sizes of csv files vary from 1GB to >25GB and uncompressing all files at once might eat up the whole disk space.
 - Delete the data file.
